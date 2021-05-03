@@ -8,7 +8,7 @@ This is what I did in my 3 to 4 hours:
 * I read the paper and tried to understand how something like this would be implemented
 * I played around with Z3 and learned how to use it
 * I followed around with the example of constraint solving that the paper gives (Section 2.2).
-* I tried to apply the same thing, but with the loop header constraint (I ∧ x < 0 ⇒ I[(y+1)/y, (x+y)/x])
+* I tried to apply the same thing, but with the loop header constraint (I ∧ x < 0 ⇒ I[(y+1)/y, (x+y)/x]), where I = (x <0 ∨ y > 0).
 * I got as far as:
 
 -----------------------------------
