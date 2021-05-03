@@ -28,3 +28,19 @@ x >= 0 ∨ (x+y <0 ∨ y+1 > 0)
 
 And then I got stuck on what to do next for half an hour before I gave up.  
 I tried to look up logic on Wikipedia to try to figure out how to turn it all into ORs with "... >= 0" so that I could use Farkas' Lemma on it.  
+
+# The section below is my second attempt at figuring out the loop header constraint, but with I as the invariant template the paper used
+---------------------------------
+I = a1x + a2y + a3 ≥ 0 ∨ a4x + a5y + a6 ≥ 0
+
+I ∧ x < 0 ⇒ I[(y+1)/y, (x+y)/x]
+
+= ¬(I ∧ x < 0) ∨ I[(y+1)/y, (x+y)/x]
+
+=  (¬I ∨ ¬(x < 0)) ∨ I[(y+1)/y, (x+y)/x]
+
+= (¬I ∨ x >= 0) ∨ I[(y+1)/y, (x+y)/x]
+
+= ((e1 < 0 ∧ e2 < 0) ∨ x >= 0) ∨ (e3 >= 0 ∨ e4 >= 0), where e1 = a1x + a2y + a3 and e2 = a4x + a5y + a6; e3 and e4 are e1 and e2 with the x and y substituted.
+
+And like my first attempt, I am also stuck in this area of figuring out what the next step would be to turn this into something that Farkas' Lemma can be applied to.
