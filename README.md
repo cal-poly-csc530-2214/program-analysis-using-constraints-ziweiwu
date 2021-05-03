@@ -26,4 +26,5 @@ x >= 0 ∨ (x+y <0 ∨ y+1 > 0)
 
 --------------------------------------
 
-And then I got stuck on what to do next for half an hour before I gave up.
+And then I got stuck on what to do next for half an hour before I gave up.  
+I tried to look up logic on Wikipedia to try to figure out how to turn it all into ORs with "... >= 0" so that I could use Farkas' Lemma on it.  
